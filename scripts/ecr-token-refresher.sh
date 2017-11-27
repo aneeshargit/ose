@@ -72,7 +72,7 @@ fi
 
 # Set label selector of all secrets to ecr=yes, if it's not defined already
 if [[ -z $SECRET_LABEL_SELECTOR ]]; then
-  SECRET_LABEL_SELECTOR='ecr=yes'
+  SECRET_LABEL_SELECTOR='ecrprod=yes'
 fi
 
 # Set label key for refreshed secrets to "valid", if it's not defined already
